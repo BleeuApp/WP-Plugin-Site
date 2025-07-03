@@ -1,0 +1,8 @@
+name = "xoxo-api"
+main = "src/index.js"
+compatibility_date = "2024-07-04"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "xoxo-licenses"
+database_id = "13aadb60-8d3d-4f21-8b78-3f0837ad195d"
