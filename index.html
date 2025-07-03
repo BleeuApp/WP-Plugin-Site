@@ -5,14 +5,151 @@
   <title>xoxo Plugin</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-    body { font-family: sans-serif; text-align: center; margin: 2em; }
-    h1 { color: #e60073; }
-    .cta { background: #e60073; color: #fff; padding: 1em 2em; border-radius: 5px; text-decoration: none; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(120deg, #ffe6f0 0%, #fff 100%);
+      min-height: 100vh;
+      margin: 0;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      padding: 2em 0 1em 0;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(230,0,115,0.04);
+    }
+    .xoxo-logo {
+      font-size: 3em;
+      color: #e60073;
+      margin-bottom: 0.2em;
+    }
+    h1 {
+      color: #e60073;
+      margin-bottom: 0.3em;
+      font-size: 2.2em;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      color: #b30059;
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+    .cta {
+      background: linear-gradient(90deg, #e60073 0%, #ff66a3 100%);
+      color: #fff;
+      padding: 1em 2.5em;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(230,0,115,0.07);
+      transition: background 0.2s, transform 0.2s;
+      display: inline-block;
+      margin-top: 1em;
+    }
+    .cta:hover {
+      background: linear-gradient(90deg, #ff66a3 0%, #e60073 100%);
+      transform: translateY(-2px) scale(1.03);
+    }
+    main {
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2em 1em 1em 1em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+      margin: 2em 0;
+    }
+    .feature {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(230,0,115,0.07);
+      border-left: 6px solid #e60073;
+      padding: 1.5em 1.2em;
+      max-width: 260px;
+      min-width: 200px;
+      text-align: left;
+      flex: 1 1 220px;
+      transition: box-shadow 0.2s;
+    }
+    .feature:hover {
+      box-shadow: 0 6px 24px rgba(230,0,115,0.13);
+    }
+    .feature-title {
+      color: #e60073;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      font-size: 1.1em;
+    }
+    .feature-desc {
+      color: #b30059;
+      font-size: 1em;
+    }
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 1.2em 0 1em 0;
+      color: #b30059;
+      font-size: 0.98em;
+      border-top: 1px solid #ffe6f0;
+      margin-top: 2em;
+    }
+    @media (max-width: 700px) {
+      .features {
+        flex-direction: column;
+        gap: 1em;
+      }
+      main {
+        padding: 1em 0.2em;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to xoxo Plugin</h1>
-  <p>The most lovable WordPress plugin for your site.</p>
-  <a class="cta" href="#get-started">Get Started</a>
+  <header>
+    <div class="xoxo-logo">💖</div>
+    <h1>xoxo Plugin</h1>
+    <div class="subtitle">The most lovable WordPress plugin for your site.<br>Easy, beautiful, and made with 💖.</div>
+    <a class="cta" href="#get-started">Get Started</a>
+  </header>
+  <main>
+    <section class="features">
+      <div class="feature">
+        <div class="feature-title">✨ Simple Setup</div>
+        <div class="feature-desc">Install and activate in seconds. No coding required.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-title">🔒 Secure & Reliable</div>
+        <div class="feature-desc">Built with best practices and license validation for peace of mind.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-title">🎨 Beautiful Design</div>
+        <div class="feature-desc">Modern, attractive UI that fits any WordPress site.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-title">⚡ Fast Support</div>
+        <div class="feature-desc">Get help quickly from our friendly team.</div>
+      </div>
+    </section>
+    <section id="get-started" style="text-align:center; margin-top:2em;">
+      <h2 style="color:#e60073;">Ready to try xoxo?</h2>
+      <p style="color:#b30059;">Download now and fall in love with your WordPress experience.</p>
+      <a class="cta" href="#" style="margin-top:1em;">Download xoxo Plugin</a>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 xoxo Plugin. Made with <span style="color:#e60073;">&#10084;</span> for WordPress.
+  </footer>
 </body>
 </html>
